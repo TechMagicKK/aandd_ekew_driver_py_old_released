@@ -1,11 +1,13 @@
 # aandd_ekew_driver_py
 
-## prepare for python module
+## install python module "serial"
 ```.sh
-pip install pyserial
+sudo rosdep init
+rosdep update
+rosdep install --from-paths aandd_ekew_driver_py -y --ignore-src
 ```
 
-## prepare for interfaces
+## prepare for interfaces (option)
 this node uses weight_scale_interfaces
 ```.sh
 cd ~/dev_ws/src
